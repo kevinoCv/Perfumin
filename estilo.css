@@ -1,0 +1,188 @@
+/* Estilo general */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 100;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #664300;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(255, 254, 176, 0.1);
+}
+
+.logo img {
+    width: 150px;
+}
+
+.usuario button {
+    padding: 10px 20px;
+    background-color: #a87b05;
+    color: #fffef7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.usuario button:hover {
+    background-color: #c9002f;
+}
+
+/* Slogan */
+
+.slogan {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    background-color: #000000;
+}
+
+.icono img {
+    width: 100px;
+}
+
+/* Elegir tipo */
+
+.elegir-tipo a {
+    text-decoration: none;
+    color: #efb810;
+    transition: color 0.3s ease;
+}
+
+.elegir-tipo a:hover {
+    color: #a87b05;
+}
+
+/* Estilo para el video */
+.video-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%; /* Proporción 16:9 para video responsive */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* Perfumes más vendidos */
+
+.producto {
+    width: 300px;
+    margin: 0 auto; /* Para centrar el contenedor */
+    text-align: center; /* Para centrar el texto */
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.agregar-carrito {
+    background-color: #a87b05;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agregar-carrito:hover {
+    background-color: #a87b05;
+}
+
+/* Todos los perfumes */
+
+.grid-perfumes .producto {
+    margin: 0 auto; /* Para centrar el contenedor */
+    text-align: center; /* Para centrar el texto */
+    width: 300px;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-perfumes .producto img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Perfumes más vendidos y Todos los perfumes */
+
+.grid-perfumes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 productos por fila */
+    gap: 20px; /* Espacio entre los productos */
+    justify-items: center; /* Para centrar los elementos en el eje x */
+}
+
+.grid-perfumes .producto {
+    text-align: center; /* Para centrar el texto */
+    background-color: #2f2a2d;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Conócenos y Contacto */
+
+.conocenos, .contacto {
+    padding: 40px 0;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #664300;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #efb810;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #a87b05;
+}
+
+/* Pie de página */
+
+footer {
+    text-align: center;
+    background-color: #664300;
+    color: #fff;
+    padding: 20px;
+}
